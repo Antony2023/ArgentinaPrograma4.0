@@ -1,0 +1,297 @@
+/*INICIO*/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    /*background: #f1f1f1;*/
+    background-image: url(/img/Messi_Portada02.jpg);
+    background-size: cover;
+  }
+  
+  /* Encabezado/Título del blog */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    background-image: url(/img/Messi_Portada.jpeg);
+    background-position: center;
+    
+  }
+
+
+
+  .text{
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 white;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Estilo de la barra de navegación superior*/
+  .barraNav {
+    overflow: hidden;
+    background-color: #333;
+    
+  }
+  
+  /* Estilos de los enlaces tponav */
+  .barraNav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  /* Cambiar color al pasar el mouse */
+  .barraNav a:hover {
+    background-color: #ddd;
+    color: black;
+    box-shadow: 3px 9px 33px lightblue;
+  }
+  
+  /* Crea dos columnas desiguales que flotan una al lado de la otra */
+  /* Columna izquierda */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+    
+  }
+  
+  /* Columna Derecha */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: none;
+    padding-left: 20px;
+  }
+  
+  /* Imagen*/
+  .imagen {
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+  }
+
+  /*Iconos*/
+  .icon{
+    width: 20%;
+    margin-bottom: 20px;
+    padding-left:5%;
+  }
+  
+  .cardicon{
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+    
+    
+  }
+
+  /* Agregar un efecto de tarjeta para artículos */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .cardVideo{
+    background-color: white;
+    padding: 15px;
+    margin-top:15px;
+    position:relative;
+  }
+  
+  /* Borrar flotadores después de las columnas */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    background: yellowgreen;
+  }
+  
+  /* Píe de página */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    
+  }
+  
+  /* Diseño responsivo: cuando la pantalla tiene menos de 800 px de ancho, haga que las dos columnas se apilen una encima de la otra en lugar de una al lado de la otra */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Diseño responsivo: cuando la pantalla tiene menos de 400 px de ancho, haga que los enlaces de navegación se apilen uno encima del otro en lugar de uno al lado del otro */
+  @media screen and (max-width: 400px) {
+    .barraNav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+  /*BIOGRAFÍA*/
+
+
+  div.transbox {
+    margin: 2px;
+    background-color: #ffffff;
+    border: 0.5px solid black;
+    opacity: 0.6;
+  }
+  
+  div.transbox p {
+    margin: 3%;
+    font-weight: bold;
+    color: #000000;    
+  }
+
+  div.transbox h3{
+    text-align: center;
+  }
+
+
+  /*GALERIA DE IMÁGENES*/
+
+img{
+  width: 100%;
+  
+}
+
+.row{
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.column{
+  flex: 25%;
+  padding: 5px;
+}
+
+.column img{
+  margin: 5px;
+}
+
+body{
+margin: 0;
+padding: 0;
+}
+
+
+
+/*SALA DE PRENSA*/
+
+/*Estilo botones*/
+
+.btn{
+  background: black;
+  border:  2px solid white;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  padding: 12px 35px;
+  min-width: 200px;
+  margin: 10px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+  border-radius: 3px;
+  color: white;
+}
+
+.btn:hover{
+  color: #fff;
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+}
+
+.imagen_prensa{
+  width: 100%;
+  height: 60%;
+}
+
+/*C O N T A C T O*/
+
+.form-register{
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px lightblue;
+  
+}
+
+.form-register h4{
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.controls{
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p{
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a{
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover{
+  color: yellow;
+  text-decoration: underline;
+}
+
+.form-register .botons{
+  width: 100%;
+  background: #1f53c5;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+

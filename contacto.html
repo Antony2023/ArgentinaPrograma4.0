@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="icon" href="img/MarcaMessi.png">
+</head>
+<body>
+    <div class="header">
+        <h1 class="text">CONTACTO</h1>
+      </div>
+    
+    <div class="barraNav">
+        <a href="biografia.html">Biografía</a>
+        <a href="galeria.html">Galería de ímagenes</a>
+        <a href="salaprensa.html">Sala de Prensa</a>
+        <a href="https://www.themessistore.com/es">The Messi Store</a>
+        <a href="#">Contacto</a>
+        <a href="index.html" style="float:right">Inicio</a>
+        
+    </div>
+
+    <form class="form-register" id="formulario">
+        <h4>Contacto</h4>
+        <input type="text" class="controls" name="nombres" id="nombres" placeholder="Ingrese su nombre" required>
+        <input type="text" class="controls" name="apellidos" id="apellidos" placeholder="Ingrese su apellido" required>
+        <input type="email" class="controls" name="correo" id="correo" placeholder="Ingrese su correo" required>
+        <input type="mensaje" class="controls" name="mensaje" id="mensaje" placeholder="Ingrese su mensaje" required>
+        <button type="button" class="botons" id="enviar" validar()>Enviar</button>
+    </form>
+
+    <script src="JS/funciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Prensa</title>
+    <link rel="stylesheet" href="css/estilo.css" >
+    <link rel="icon" href="img/MarcaMessi.png">
+</head>
+<body>
+    <div class="header">
+        <h1 class="text">SALA DE PRENSA</h1>
+      </div>
+    
+    <div class="barraNav">
+        <a href="biografia.html">Biografía</a>
+        <a href="galeria.html">Galería de ímagenes</a>
+        <a href="#">Sala de Prensa</a>
+        <a href="https://www.themessistore.com/es">The Messi Store</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="index.html" style="float:right">Inicio</a>
+        <img src="img/Messi_SalaPrensa.jpg" alt="Messi Sala Prensa">  
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img class="imagen_prensa" src="img/Messi_Lille.jpeg" alt="Messi Vs Lille">
+            <div class="transbox" class="cardicon">
+                <h3>Aparece Leo para lograr la épica</h3>
+                <!--<p>El PSG derrotó al Lille 4-3 con un tanto de falta del argentino en el minuto 94.</p>-->
+            </div>
+            <a href="https://www.sport.es/es/noticias/psg/aparece-leo-messi-lograr-epica-83233720"></a>
+                <button class="btn" onclick="gotoLink(this)" value="https://www.sport.es/es/noticias/psg/aparece-leo-messi-lograr-epica-83233720">Ver nota completa</button>
+        </div>
+
+        <div class="column">
+            <img class="imagen_prensa" src="img/Messi_Andy.png" alt="Messi Entrevista con Andy">
+            <div class="transbox" class="cardicon">
+                <h3>“El día que salimos campeones del mundo cambió todo para mí".</h3>
+                <!--<p>Leo charló en Perros de la Calle con Andy Kusnetzoff y allí contó lo que sintió al besar la Copa.</p>-->
+            </div>
+            <a href="https://urbanaplayfm.com/messienurbanaplay-leo-messi-mano-a-mano-con-andy-kusnetzoff-este-lunes-en-perros2023/"></a>
+            <button class="btn" onclick="gotoLink(this)" value="https://urbanaplayfm.com/messienurbanaplay-leo-messi-mano-a-mano-con-andy-kusnetzoff-este-lunes-en-perros2023/">Ver nota completa</button>
+        </div>  
+
+        <div class="column">   
+            <img class="imagen_prensa" src="img/Messi_Gracias.jpg" alt="Messi Gracias">
+            <div class="transbox" class="cardicon">
+                <h3>Gracias, Messi.</h3>
+                <!--<p>Gracias Messi. Gracias por ostentar familia antes que lujo, gracias por enseñarnos que tipos con fama y guita también pueden...</p>-->
+            </div>
+            <a href="https://www.clarin.com/deportes/gracias-messi_0_ZJd4z4OFB8.html"></a>
+            <button class="btn" onclick="gotoLink(this)" value="https://www.clarin.com/deportes/gracias-messi_0_ZJd4z4OFB8.html">Ver nota completa</button>
+            <script>
+                function gotoLink(link){
+                    console.log(link.value);
+                    window.open(link.value);}
+            </script>
+        </div>  
+
+        
+    </div>
+
+</body>
+</html>
